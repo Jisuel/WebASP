@@ -1,0 +1,57 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - Mi aplicación ASP.NET</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<body>
+    <div class="container" align="center">
+        <div>
+            <img src="/images/logo.jpg" />
+        </div>
+    </div>
+    <div class="navbar navbar-inverse" style="margin-top:50px; background-color:white; border:none">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse" style="background-color:darkturquoise">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="menu">
+                    <li>@Html.ActionLink("INICIO", "Index", "Inicio")</li>
+                    <li>@Html.ActionLink("NOSOTROS", "Nosotros", "Nosotros")</li>
+                    <li>@Html.ActionLink("GALERIA", "Galeria", "Galeria")</li>
+                    <li>@Html.ActionLink("BLOG", "Blog", "Blog")</li>
+                    <li>@Html.ActionLink("CONTACTO", "Contacto", "Contacto")</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="container body-content">
+        @RenderBody()
+        <hr />
+        <footer>
+            <div class="footer">
+                <div class="mensaje">
+                    <p>&copy; @DateTime.Now.Year - Derechos Reservados / 2017-5319</p>
+                    <a href="https://www.facebook.com/"><img src="/images/icons/icon-facebook.jpg" /></a>
+                    <a href="https://twitter.com/"><img src="/images/icons/icon-twitter.jpg" /></a>
+                    <a href="https://www.pinterest.com/"><img src="/images/icons/icon-pinterest.jpg" /></a>
+                    <a href="https://aboutme.google.com/u/0/?referer=gplus"><img src="/images/icons/icon-googleplus.jpg" /></a>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>

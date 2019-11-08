@@ -1,0 +1,70 @@
+﻿
+@{
+    ViewBag.Title = "Contacto";
+}
+
+<section id="contacto" class="section-padding" style="margin-top:50px">
+        <div class="row msg-row">
+            <div class="col-md-4 col-sm-4 mr-15">
+                <div class="media-2">
+                    <div class="media-left">
+                        <div class="contact-phone bg-1 text-center"><span class="phone-in-talk fa fa-phone"></span></div>
+                    </div>
+                    <div class="media-body">
+                        <h4 class="dark-blue regular">Teléfono</h4>
+                        <p class="light-blue regular alt-p">809 - 255 - 4025 / <span class="contacts-sp">Contanto Directo</span></p>
+                    </div>
+                </div>
+                <div class="media-2">
+                    <div class="media-left">
+                        <div class="contact-email bg-14 text-center"><span class="hour-icon fa fa-clock-o"></span></div>
+                    </div>
+                    <div class="media-body">
+                        <h4 class="dark-blue regular">Horarios</h4>
+                        <p class="light-blue regular alt-p"> Lunes a Viernes 8.00 AM - 6:00 PM</p>
+                        <p class="light-blue regular alt-p">
+                            Sábados 9:00 AM - 5:00 PM
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-8 col-sm-8">
+                <form action="" method="post" role="form" class="contactForm">
+                    <div class="col-md-6 col-sm-6 contact-form pad-form">
+                        <div class="form-group label-floating is-empty">
+                            <input type="text" name="name" class="form-control" id="name" placeholder="Nombre" />
+                        </div>
+
+                    </div>
+                    <div class="col-md-6 col-sm-6 contact-form">
+                        <div class="form-group">
+                            <input type="date" class="form-control label-floating is-empty" name="date" id="date" placeholder="Fecha" />
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-6 contact-form pad-form">
+                        <div class="form-group">
+                            <input type="email" class="form-control label-floating is-empty" name="email" id="email" placeholder="Correo" />
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-6 contact-form">
+                        <div class="form-group">
+                            <input type="text" class="form-control label-floating is-empty" name="phone" id="phone" placeholder="Teléfono" />
+                        </div>
+                    </div>
+                    <div class="col-md-12 contact-form">
+                        <div class="form-group label-floating is-empty">
+                            <textarea class="form-control" name="message" rows="5" rows="3" placeholder="Mensaje"></textarea>
+                            <div class="validation"></div>
+                        </div>
+
+                    </div>
+                    <div class="col-md-12 btnpad">
+                        <div class="contacts-btn-pad">
+                            <button class="contacts-btn">Enviar</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+</section>
+

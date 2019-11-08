@@ -1,0 +1,42 @@
+﻿
+@{
+    ViewBag.Title = "Galeria";
+}
+<div id="carousel" class="carousel slide" data-ride="carousel" style="margin-top:15px">
+    <ol class="carousel-indicators">
+        <li data-target="#carousel" data-slide-to="0" class="active"></li>
+        <li data-target="#carousel" data-slide-to="1"></li>
+        <li data-target="#carousel" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner" role="listbox">
+        <div class="item active">
+            <img src="/images/mustache9.jpg" style="display:block; margin:auto" />
+            <img src="/images/mustache3.jpg" style="float:right; margin-top:-300px; margin-right:120px" />
+            <img src="/images/mustache8.jpg" style="float:left; margin-top:-300px; margin-left:120px" />
+        </div>
+        <div class="item">
+            <img src="/images/mustache5.jpg" style="display:block; margin:auto" />
+            <img src="/images/mustache4.jpg" style="float:left; margin-top:-300px; margin-left:120px" />
+            <img src="/images/mustache6.jpg" style="float:right; margin-top:-300px; margin-right:120px" />
+        </div>
+        <div class="item">
+            <img src="/images/mustache1.jpg" style="display:block; margin:auto" />
+            <img src="/images/mustache7.jpg" style="float:left; margin-top:-300px; margin-left:120px" />
+            <img src="/images/mustache2.jpg" style="float:right; margin-top:-300px; margin-right:120px" />
+        </div>
+    </div>
+    <a href="#carousel" class="left carousel-control" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Anterior</span>
+    </a>
+    <a href="#carousel" class="right carousel-control" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right"></span>
+        <span class="sr-only">Siguiente</span>
+    </a>
+    <script>
+        $("#carousel").carousel(
+            {
+                interval: 2000
+            });
+    </script>
+</div>
